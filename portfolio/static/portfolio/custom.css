@@ -1,0 +1,19 @@
+
+
+#navbarSupportedContent {
+    position: absolute;
+    right: 49.5px;
+}
+
+h1{
+    text-align: center;
+    margin : 50px;
+  
+}
+
+
+
+#glavblog > div{
+    
+    width: 25%;
+}
