@@ -5,33 +5,37 @@
 
 
 
-    
+
     {% load static %}
-        
 
 
+<div <="row justify-content-center my-3">
+  <div <="col-5">
+    <img src="{% static 'portfolio/tinkoff.png' %}" class="img-fluid">
+  </div>
+</div>
 
-    
+
     <br>
-    <img src="{% static 'portfolio/tinkoff.png' %}" class="rounded mx-auto d-block">
+
     <div class="row justify-content-center mb-3">
         <div class="col-md-9 text-center">
             <h1>This site was made by Salimov Andrey</h1>
         </div>
-    </div>    
-    <div class="row">        
+    </div>
+    <div class="row">
         {% for proekt in proekts %}
         <div class="col-lg-4 col-md-6">
-        
+
             <h2>{{ proekt.title }}</h2>
-            
+
             <p>{{ proekt.description }}</p>
             <img src="{{ proekt.image.url }}" class="img-fluid mb-2">
             {% if proekt.utl %}
             <br><a href="{{proekt.url}}" class="img-fluid mb-2">Link</a>
-        </div>    
+        </div>
         {% endif %}
-            
+
 
     </div>
         {% endfor %}
@@ -41,7 +45,7 @@
 
 
 
-    
-    
+
+
 
 
